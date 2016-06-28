@@ -14,7 +14,6 @@ namespace Snake
 
         public Point()
         {
-            Console.WriteLine("Создается новая точка");
         }
 
         public Point(int _x, int _y, char _sym)
@@ -55,6 +54,12 @@ namespace Snake
         {
             Console.SetCursorPosition(x, y);
             Console.WriteLine(sym);
+        }
+
+        public void Clear()
+        {
+            sym = ' ';
+            Draw();
         }
     }
 }
